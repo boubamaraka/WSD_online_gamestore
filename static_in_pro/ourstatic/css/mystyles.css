@@ -1,0 +1,31 @@
+.navbar-default{
+  background-color: #7986CB ;
+  color:#01090C;
+}
+.navbar-default .navbar-nav>li>a {
+  color:#fff;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color:#030608;
+}
+.row-footer{
+    background-color: #585B61;
+    /*margin:0px auto;*/
+    margin: 0px;
+    padding: 20px 0px 20px 0px;
+
+    color:#fff;
+}
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #BBBBBD ;
+    color:floralwhite;
+}
+#social li {
+  padding:2px;
+}

@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="#"><img src="{% static 'img/logonew.png' %}" height=32 width=150 class="logo"/></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="">Contact</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Register</a></li>
+
+
+      </ul>
+      <form class="navbar-form navbar-right " method="" action="">
+      <div class="form-group">
+        <input type="text" class="form-control" name="username" placeholder="Username" />
+      </div>
+      <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Password" />
+      </div>
+      <button class="btn btn-default" type="submit">Login</button>
+    </form>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>

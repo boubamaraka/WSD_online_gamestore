@@ -31,9 +31,8 @@ Main models
 
 ![models](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/models.png)          
 
-FK = foreign key
-
-[*text*] = blank is allowed
+FK = foreign key <br>
+[_text_] = blank is allowed
 
 URLs, APIs
 ----------

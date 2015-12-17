@@ -29,7 +29,7 @@ Functionalities
 Main models
 -----------
 
-![models](https://git.niksula.hut.fi/makipaa1/gamestore/blob/master/docs/images/models.png)
+![models](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/models.png)          
 
 FK = foreign key
 

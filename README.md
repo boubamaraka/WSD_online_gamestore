@@ -90,23 +90,22 @@ and they are compatible with the newly added ones.
 Subtasks
 ========
 
-### The subtasks below are in a chronological order. We will implement the ones at the top first.
-
-NOTE: The "chronological order" of this table is not very strict, for example 
-testing is done in more places than just in the end.
+### The subtasks below are in a chronological order.
 
 Initial layout and the design document:
 ---------------------------------------
 
 | **Task** | **Description** | **Priority** | **Estimated time** |
+|---|---|---|---|
 | Layout design | Template pages | 1 | 10 hours |
-| Model design | Database | 1 | 10 hour |
+| Model design | Database | 1 | 10 hours |
 | Url planning | Page URLs | 1 | 5 hours |
 
 Main design phase
 -----------------
 
 | **Task** | **Description** | **Priority** | **Estimated time** |
+|---|---|---|---|
 | Page layout implementation | Development of the templates for the pages that are rendered | 1 | 35 hours |
 | Back end development | Implementation of all the server side functionality | 1 | 30 hours |
 | JavaScript | Game embedding and other JS functionality | 1 | 25 hours |
@@ -115,10 +114,13 @@ Main design phase
 | Back-end testing | Test the back-end functionality | 3 | 20 hours |
 | Website final testing | Testing the website overall, different use-cases etc. | 2 | 10 hours |
 | Deployment | Deploy the application to Heroku | 1 | 10 hours |
-| | | 180 hours |
+| | | | 180 hours |
 
 180 hours makes 60 hours per developer which equals to the amount in the course
 description.
+
+NOTE: The "chronological order" of this table is merely didrectional, for example 
+testing is done in more places than just in the end.
 
 ![mockup](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/models.png)
 

@@ -122,7 +122,7 @@ description.
 NOTE: The "chronological order" of this table is merely didrectional, for example 
 testing is done in more places than just in the end.
 
-![mockup](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/models.png)
+![mockup](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/mockup.png)
 
 Development
 ===========
@@ -157,10 +157,10 @@ However, for the very core features whose behaviour we do not expect to change,
 testswill be written to ensure their working. Following criteria will be used to
 evaluate for which features tests should be written for:
 
-*Is the feature ready, that is to say, the behaviour not supposed to change later?
-*Is it something that other parts of the software rely on or probably will rely on in the future?
-*Is it something with many possible inputs and outcomes making it difficult to test manually?
-*Is it a core feature, meaning that it behaving unexpectedly would be a “show-stopper”
+* Is the feature ready, that is to say, the behaviour not supposed to change later?
+* Is it something that other parts of the software rely on or probably will rely on in the future?
+* Is it something with many possible inputs and outcomes making it difficult to test manually?
+* Is it a core feature, meaning that it behaving unexpectedly would be a “show-stopper”
 
 If at least one of these criteria is met, tests should be written for that part of
 the application. Other parts can be tested manually, as that tends to be faster,

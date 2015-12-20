@@ -1,18 +1,8 @@
-For plan:
-Goal            <- Ivan
-(Mockup)        <- Ibrahima
-Diagram of client side and backend   <- Antti
-Functionality   <- Ivan
-Priorities      <- Ivan
-
-Schedule        <- Ibrahima
-Subtasks        <- Ibrahima
-
-Testing         <- Antti
-Risks           <- Antti
+# ComePlayGo project plan
 
 Goal
 ====
+
 We are aiming to create a website where players can buy and developers can sell
 their games. The games are not hosted by the site, they would be available
 through the links that the developers provide. One developer can have many games
@@ -23,8 +13,8 @@ Players can purchase the uploaded games. After purchasing the game they can have
 access to it, they can save their high score and they can even save the status
 of the game, so they can continue where they have left off.
 
-Functionalities
-===============
+Functionality
+=============
 
 Main models
 -----------
@@ -96,3 +86,109 @@ extra features (in the order of priority):
 
 In every phase we will add tests to make sure that the existing features work
 and they are compatible with the newly added ones.
+
+Subtasks
+========
+
+### The subtasks below are in a chronological order. We will implement the ones at the top first.
+
+NOTE: The "chronological order" of this table is not very strict, for example 
+testing is done in more places than just in the end.
+
+Initial layout and the design document:
+---------------------------------------
+
+| **Task** | **Description** | **Priority** | **Estimated time** |
+| Layout design | Template pages | 1 | 10 hours |
+| Model design | Database | 1 | 10 hour |
+| Url planning | Page URLs | 1 | 5 hours |
+
+Main design phase
+-----------------
+
+| **Task** | **Description** | **Priority** | **Estimated time** |
+| Page layout implementation | Development of the templates for the pages that are rendered | 1 | 35 hours |
+| Back end development | Implementation of all the server side functionality | 1 | 30 hours |
+| JavaScript | Game embedding and other JS functionality | 1 | 25 hours |
+| CSS Design | Style sheets of the pages | 2 | 15 hours |
+| Front-end testing | Test the user interface | 3 | 10 hours |
+| Back-end testing | Test the back-end functionality | 3 | 20 hours |
+| Website final testing | Testing the website overall, different use-cases etc. | 2 | 10 hours |
+| Deployment | Deploy the application to Heroku | 1 | 10 hours |
+| | | 180 hours |
+
+180 hours makes 60 hours per developer which equals to the amount in the course
+description.
+
+![mockup](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/models.png)
+
+Development
+===========
+
+Development practices
+---------------------
+
+We use Slack to facilitate the communication between team members. We meet once a
+week to work together and to talk about tasks for the next week. We use the 
+issue-tracking system of GitLab to stay on track of bugs and problems that need
+attention.
+
+Developers ought to do development in feature-specific branches to always have a
+working version in the master branch.
+
+To ensure the quality and readability of the code, JSLint is used for JavaScript
+files.
+
+![mockup](https://git.niksula.hut.fi/makipaa1/gamestore/raw/master/docs/images/diagram.png)
+
+Testing
+-------
+
+The purpose of testing is to ensure the best possible quality of software. The
+importance of it is emphasized the more the larger the project is, becoming crucial 
+in software in continuous development and in production. Because for our online game
+store and platform, there is a lot to do in very limited time, testing is not 
+performed in a very inclusive manner as that would slow down the development proces 
+too significantly.
+
+However, for the very core features whose behaviour we do not expect to change,
+testswill be written to ensure their working. Following criteria will be used to
+evaluate for which features tests should be written for:
+
+*Is the feature ready, that is to say, the behaviour not supposed to change later?
+*Is it something that other parts of the software rely on or probably will rely on in the future?
+*Is it something with many possible inputs and outcomes making it difficult to test manually?
+*Is it a core feature, meaning that it behaving unexpectedly would be a “show-stopper”
+
+If at least one of these criteria is met, tests should be written for that part of
+the application. Other parts can be tested manually, as that tends to be faster,
+though less reliable, in small number of tests (when the development process is
+short).
+
+It is up for the developer to decide whether they want to follow test-driven
+development strategy or write the tests only afterwards to ensure that later work
+will not break the feature.
+
+For automated testing, we will use Django’s unit tests available in the django.test
+directory: <https://docs.djangoproject.com/en/1.9/topics/testing/overview/>
+
+The application should be ensured to work on at least Chrome and Firefox browsers.
+
+Security
+--------
+
+The messaging system between the embedded games and our application is very 
+vulnerable, but that is left without attention in this project. Also, the whole 
+application uses HTTP instead of HTTPS due to the lack of an SSL certificate.
+
+Other parts that do require attention when it comes to security include user 
+authentication and authorization. The users should only have access to pages they are 
+allowed. For example, game sales statistics are only visible for the developer.
+
+The payments must be treated properly and any kind of injection should be disallowed
+by never using the user input as is.
+
+As part of the development process, security should be thought about by the
+developer of the feature. For a production-ready software, peer reviews would 
+be conducted but to make the process as agile as possible, security remains the 
+responsibility of the developer of the feature mainly in this project.

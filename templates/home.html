@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Django{% endblock %}
+{% block head %}Welcome to Django{% endblock %}
+{% block content %}
+   <div class='row'>
+   <div class="col-sm-6 col-sm-offset-3">
+    <p>Welcome {{ user.username }} !!!</p>
+    <a href="/logout/">Logout</a>
+</div>
+<div>
+{% endblock %}

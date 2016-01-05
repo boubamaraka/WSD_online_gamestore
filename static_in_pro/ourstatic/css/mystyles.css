@@ -29,3 +29,13 @@ body{
 #social li {
   padding:2px;
 }
+.wrapper{
+  background: #F5F5F0;
+
+}
+#register{
+  text-align: center;
+}
+.userincore{
+  text-align: center;
+}

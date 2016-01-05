@@ -22,7 +22,14 @@ from gameshop import views
 import gameshop
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',gameshop.views.index, name="index")
+    url(r'^$/',gameshop.views.index, name="index"),
+    url(r'^home/$', gameshop.views.home),
+    url(r'^$', 'django.contrib.auth.views.login'),
+    url(r'^logout/$', views.logout_page),
+    url(r'^accounts/login/$', 'django.contrib.auth.views.login'), # If user is not login it will redirect to login page
+    url(r'^register/$', views.register),
+    url(r'^register/success/$', views.register_success),
+    #url(r'^registeruser/$', views.regist),
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

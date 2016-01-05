@@ -1,5 +1,6 @@
 {% load staticfiles %}
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Static Top Navbar Example for Bootstrap</title>
+    
 
     <!-- Bootstrap core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
@@ -35,21 +36,29 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 
     <![endif]-->
+    <title>Django Login Application |
+        {% block title %}{% endblock %}</title>
 
   </head>
 
   <body>
 
+
     <!-- Static navbar -->
   {% include "navbar.html" %}
 
 
+
     <div class="container">
+      <div class="wrapper">
+          <h1>{% block head %}{% endblock %}</h1>
 
       <!-- Main component for a primary marketing message or call to action -->
       {% block content %}
 
+
       {% endblock  %}
+    </div>
 
     </div> <!-- /container -->
 

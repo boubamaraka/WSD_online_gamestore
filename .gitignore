@@ -15,3 +15,6 @@ tests/coverage_html/
 tests/.coverage
 build/
 tests/report/
+gameshop/migrations/*
+venv/
+db.sqlite3
